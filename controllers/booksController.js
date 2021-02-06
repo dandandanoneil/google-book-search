@@ -16,8 +16,13 @@ module.exports = {
   },
   create: function(req, res) {
     db.Book
-      .create(req.body)
-      .then(dbModel => res.json(dbModel))
+      .create({
+        title: req.params.title,
+        authors: req.params.authors,
+        description: req.params.description,
+        image: req.params.image,
+        link: req.params.link
+      }).then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
@@ -27,9 +32,9 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
+    console.log("Deleting book with id", req.params.id);
     db.Book
-      .findById({ _id: req.params._id })
-      .then(dbModel => dbModel.remove())
+      .remove({ _id: req.params.id })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   }

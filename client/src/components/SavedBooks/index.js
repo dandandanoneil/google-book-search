@@ -19,10 +19,10 @@ class SavedBooks extends Component {
             .catch(err => console.error(err));
     }
 
-    handleUnsave = (book) => {
+    handleUnsave = (event) => {
         const books = this.state.savedBooks;
 
-        API.deleteBook(book._id)
+        API.deleteBook(event.target.id)
             .then(deletedBook => this.setState({
                 savedBooks: books.filter(book => book._id !== deletedBook._id) 
             }))
@@ -61,10 +61,13 @@ class SavedBooks extends Component {
                                     <Button
                                         href={book.link}
                                         target="blank"
+                                        className="mr-2 mb-2"
                                         style={{ backgroundColor: "#f3d366" }}
                                     >Book Info from Google</Button>
                                     <Button
-                                        onClick={() => this.handleUnsave(book)}
+                                        onClick={this.handleUnsave}
+                                        id={book._id}
+                                        className="mr-2 mb-2"
                                         style={{ backgroundColor: "#bc6fcd" }}
                                     >Unsave from My Books</Button>
                                 </Col>
