@@ -10,12 +10,16 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 class Search extends Component {
   state = {
-    search: "Cher",
+    search: "",
     results: []
   };
 
   componentDidMount() {
-    this.searchBook();
+    if (this.state.search) {
+      this.searchBook(this.state.search);
+    } else {
+      this.searchBook("JavaScript");
+    }
   };
 
   handleChange = event => {
@@ -27,7 +31,7 @@ class Search extends Component {
     });
   };
 
-  handleSubmit = function(event) {
+  handleSubmit = event => {
     event.preventDefault();
     this.searchBook(this.state.search);
   };
@@ -37,23 +41,27 @@ class Search extends Component {
         _id: book.id,
         title: book.volumeInfo.title,
         authors: book.volumeInfo.authors,
-        description: book.volumeInfo.description,
-        image: book.volumeInfo.imageLinks.thumbnail,
+        description: "",
+        image: "",
         link: book.volumeInfo.previewLink
     }
+
+    if (book.volumeInfo.description) newBook.description = book.volumeInfo.description;
+    if (book.volumeInfo.imageLinks.thumbnail) newBook.image = book.volumeInfo.imageLinks.thumbnail;
+    
 
     return newBook;
   };
   
   searchBook = function(search) {
     console.log("Making an API call to search for", search);
+    this.setState({ results: [] })
     API.getBook(search)
     .then(books => {
       console.log("API call returned", books);
-      this.setState({
-        results: books.data.items.map(book => this.formatObject(book))
-      })})
-    .catch(err => console.error(err));
+      const newResults = books.data.items.map(book => this.formatObject(book));
+      this.setState({ results: newResults })
+    }).catch(err => console.error(err));
 
   }
 
@@ -64,7 +72,6 @@ class Search extends Component {
         <Container>
           <Row className="justify-content-sm-center mb-3">
             <Col sm="4">
-              <Form inline>
                 <Form.Control  
                   type="text" 
                   placeholder="Search for a book"
@@ -73,11 +80,10 @@ class Search extends Component {
                   onChange={this.handleChange}
                 />
                 <Button 
-                  onSubmit={this.handleSubmit}
+                  onClick={this.handleSubmit}
                   className="ml-auto"
                   style={{ backgroundColor: "#2ab4e3" }}
                 >Search</Button>
-              </Form>
             </Col>
           </Row>
 

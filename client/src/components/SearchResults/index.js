@@ -20,7 +20,7 @@ class SearchResults extends Component {
         
         API.saveBook(book)
             .then(book => this.setState({ 
-                savedBooks: books.push(book) 
+                savedBooks: books.concat([book]) 
             }))
             .catch(err => console.error(err));
     }
@@ -32,7 +32,7 @@ class SearchResults extends Component {
                 <h5 style={{  color: "#2ab4e3"  }}>No Results Found</h5>
                 :
                 this.props.results.map(book => (
-                    <Card className="justify-content-sm-center m-3 p-3" key={book._id}>
+                    <Card className="justify-content-sm-center m-3 p-3" key={book.link}>
                         <Row>
                             <Col sm={2}>
                                 <Image
