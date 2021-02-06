@@ -6,20 +6,16 @@ import Header from "../../components/Header";
 import SearchResults from "../../components/SearchResults";
 
 // IMPORT COMPONENTS FROM REACT-BOOTSTRAP
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, FormControl, InputGroup, Button } from "react-bootstrap";
 
 class Search extends Component {
   state = {
-    search: "",
+    search: "JavaScript",
     results: []
   };
 
   componentDidMount() {
-    if (this.state.search) {
-      this.searchBook(this.state.search);
-    } else {
-      this.searchBook("JavaScript");
-    }
+    this.searchBook(this.state.search);
   };
 
   handleChange = event => {
@@ -46,8 +42,12 @@ class Search extends Component {
         link: book.volumeInfo.previewLink
     }
 
-    if (book.volumeInfo.description) newBook.description = book.volumeInfo.description;
-    if (book.volumeInfo.imageLinks.thumbnail) newBook.image = book.volumeInfo.imageLinks.thumbnail;
+    if (book.volumeInfo.description) {
+      newBook.description = book.volumeInfo.description;
+    }
+    if (book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail) {
+      newBook.image = book.volumeInfo.imageLinks.thumbnail;
+    }
     
 
     return newBook;
@@ -71,19 +71,23 @@ class Search extends Component {
         <Header>Search for Books</Header>
         <Container>
           <Row className="justify-content-sm-center mb-3">
-            <Col sm="4">
-                <Form.Control  
-                  type="text" 
-                  placeholder="Search for a book"
-                  name="search"
-                  value={this.state.search}
-                  onChange={this.handleChange}
+            <Col sm="6">
+              <InputGroup className="mb-3">
+                <FormControl
+                    type="text" 
+                    placeholder="Search for a book"
+                    name="search"
+                    value={this.state.search}
+                    onChange={this.handleChange}
                 />
-                <Button 
-                  onClick={this.handleSubmit}
-                  className="ml-auto"
-                  style={{ backgroundColor: "#2ab4e3" }}
-                >Search</Button>
+                <InputGroup.Append>
+                  <Button 
+                      onClick={this.handleSubmit}
+                      className="ml-auto"
+                      style={{ backgroundColor: "#2ab4e3" }}
+                  >Search</Button>
+                </InputGroup.Append>
+              </InputGroup>
             </Col>
           </Row>
 
