@@ -19,10 +19,10 @@ To run this app on your machine, use the <code>npm install</code> command in the
 
 ## Screenshots
 Search Page Screenshot:
-![Search Page Screenshot](./public/assets/images/search-screenshot.png)
+![Search Page Screenshot](./assets/images/search-screenshot.png)
 
 Saved Books Screenshot:
-![Saved Books Screenshot](./public/assets/images/saved-books-screenshot.png)
+![Saved Books Screenshot](./assets/images/saved-books-screenshot.png)
 
 ## Licenses
 ### MIT License
