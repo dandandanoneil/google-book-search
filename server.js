@@ -22,7 +22,15 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // CONNECT TO MONGODB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", { useNewUrlParser: true });
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/googlebooks',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
 // START SERVER
 app.listen(PORT, () => {
