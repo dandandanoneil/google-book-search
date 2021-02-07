@@ -15,9 +15,11 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+    console.log("req.body.id:", req.body.id);
+
     db.Book
       .create({
-        _id: req.body.id,
+        _id: req.body._id,
         title: req.body.title,
         authors: req.body.authors,
         description: req.body.description,
@@ -29,9 +31,11 @@ module.exports = {
   remove: function(req, res) {
     console.log("Deleting book with id", req.params.id);
     db.Book
-      .findById({ id: req.params.id })
-      .then(dbModel => dbModel.remove())
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  }
+    .findById(req.params.id)
+    .then(dbModel => dbModel.remove())
+    .then(dbModel => res.json(dbModel))
+    .catch(err => {
+        console.error(err);
+        res.status(422).json(err);
+    });  }
 };

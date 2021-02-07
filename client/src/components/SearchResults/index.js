@@ -34,16 +34,15 @@ class SearchResults extends Component {
                 this.props.results.map(book => (
                     <Card className="justify-content-sm-center m-3 p-3" key={book.link}>
                         <Row>
-                            <Col sm={2}>
+                            <Col sm={2} className="text-center p-2">
                                 <Image
                                     src={book.image}
                                     alt={book.title}
                                     rounded
                                     fluid
-                                    style={{ display: "block", margin: "auto" }}
                                 />
                             </Col>
-                            <Col sm={10}>
+                            <Col sm={10} className="p-2">
                                 <h5>{book.title}</h5>
                                 <h6>by {book.authors}</h6>
                                 <p>{book.description}</p>

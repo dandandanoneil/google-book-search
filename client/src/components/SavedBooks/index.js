@@ -44,16 +44,15 @@ class SavedBooks extends Component {
                     {this.state.savedBooks.map(book => (
                         <Card key={book._id}>
                             <Row>
-                                <Col sm={2}>
+                                <Col sm={2} className="text-center p-2">
                                     <Image
                                         src={book.image}
                                         alt={book.title}
                                         rounded
                                         fluid
-                                        style={{ display: "block", margin: "auto" }}
                                     />
                                 </Col>
-                                <Col sm={10}>
+                                <Col sm={10} className="p-2">
                                     <h5>{book.title}</h5>
                                     <h6>by {book.authors}</h6>
                                     <p>{book.description}</p>
