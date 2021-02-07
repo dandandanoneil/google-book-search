@@ -10,22 +10,21 @@ class SavedBooks extends Component {
     }
 
     componentDidMount() {
-        console.log("Making an API call to get saved books");
+        this.updateSavedBooks();
+    }
+    
+    updateSavedBooks() {
         API.getBooks()
-            .then(results => {
-                console.log("API call returned", results);
-                this.setState({ savedBooks: results.data });
-            })
-            .catch(err => console.error(err));
+        .then(res => { this.setState({ savedBooks: res.data }) })
+        .catch(err => console.error(err));
     }
 
     handleUnsave = (event) => {
-        const books = this.state.savedBooks;
-
         API.deleteBook(event.target.id)
-            .then(deletedBook => this.setState({
-                savedBooks: books.filter(book => book._id !== deletedBook._id) 
-            }))
+            .then(res => {
+                console.log("Deleted book:", res);
+                this.updateSavedBooks();
+            })
             .catch(err => console.error(err));
     }
 
