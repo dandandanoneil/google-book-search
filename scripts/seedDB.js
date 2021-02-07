@@ -10,140 +10,150 @@ mongoose.connect(
 
 const bookSeed = [
   {
-    title: "The Hunger Games",
-    authors: ["Suzanne Collins"],
-    description: "Set in a dark vision of the near future, a terrifying reality TV show is taking place. Twelve boys and twelve girls are forced to appear in a live event called The Hunger Games. There is only one rule: kill or be killed. When sixteen-year-old Katniss Everdeen steps forward to take her younger sister's place in the games, she sees it as a death sentence. But Katniss has been close to death before. For her, survival is second nature.",
-    image: "http://books.google.com/books/content?id=sazytgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    link: "http://books.google.com/books?id=sazytgAACAAJ&dq=title:The+Hunger+Games&hl=&source=gbs_api"
+    _id: "DapMtgEACAAJ",
+    authors: ["Andrew Sean Greer"],
+    title: "Less",
+    description: "WINNER OF THE PULITZER PRIZE FOR FICTION 2018 'You will sob little tears of joy' Nell Zink 'I recommend it with my whole heart' Ann Patchett 'I adore this book' Armistead Maupin 'Charming, languid and incredibly funny, I absolutely adored Arthur' Jenny Colgan 'Marvellously, endearingly, unexpectedly funny' Gary Shteyngart 'Bedazzling, bewitching and be-wonderful' New York Times Book Review 'A fast and rocketing read . . . a wonderful, wonderful book!' Karen Joy Fowler 'Hilarious, and wise, and abundantly funny' Adam Haslett WHO SAYS YOU CAN'T RUN AWAY FROM YOUR PROBLEMS? Arthur Less is a failed novelist about to turn fifty. A wedding invitation arrives in the post: it is from an ex-boyfriend of nine years who is engaged to someone else. Arthur can't say yes - it would be too awkward; he can't say no - it would look like defeat. So, he begins to accept the invitations on his desk to half-baked literary events around the world. From France to India, Germany to Japan, Arthur almost falls in love, almost falls to his death, and puts miles between him and the plight he refuses to face. Less is a novel about mishaps, misunderstandings and the depths of the human heart.",
+    image: "http://books.google.com/books/content?id=DapMtgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    link: "http://books.google.com/books?id=DapMtgEACAAJ&dq=less&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "The Dead Zone",
-  authors: ["Stephen King"],
-  description: "A number-one national best seller about a man who wakes up from a five-year coma able to see people's futures and the terrible fate awaiting mankind in The Dead Zone - a \"compulsive page-turner\" (The Atlanta Journal-Constitution). Johnny Smith awakens from a five-year coma after his car accident and discovers that he can see people's futures and pasts when he touches them. Many consider his talent a gift; Johnny feels cursed. His fiancée married another man during his coma, and people clamor for him to solve their problems. When Johnny has a disturbing vision after he shakes the hand of an ambitious and amoral politician, he must decide if he should take drastic action to change the future. The Dead Zone is a \"faultlessly paced...continuously engrossing\" (Los Angeles Times) novel of second sight.",
-    image: "http://books.google.com/books/content?id=ZbUACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=ZbUACwAAQBAJ&printsec=frontcover&dq=The+Dead+Zone&hl=&cd=1&source=gbs_api"
+    _id: "_jNwDwAAQBAJ",
+    authors: ["Casey McQuiston"],
+    title: "Red, White & Royal Blue",
+    description: "* Instant NEW YORK TIMES and USA TODAY bestseller * * GOODREADS CHOICE AWARD WINNER for BEST DEBUT and BEST ROMANCE of 2019 * * BEST BOOK OF THE YEAR* for VOGUE, NPR, VANITY FAIR, and more! * What happens when America's First Son falls in love with the Prince of Wales? When his mother became President, Alex Claremont-Diaz was promptly cast as the American equivalent of a young royal. Handsome, charismatic, genius—his image is pure millennial-marketing gold for the White House. There's only one problem: Alex has a beef with the actual prince, Henry, across the pond. And when the tabloids get hold of a photo involving an Alex-Henry altercation, U.S./British relations take a turn for the worse. Heads of family, state, and other handlers devise a plan for damage control: staging a truce between the two rivals. What at first begins as a fake, Instragramable friendship grows deeper, and more dangerous, than either Alex or Henry could have imagined. Soon Alex finds himself hurtling into a secret romance with a surprisingly unstuffy Henry that could derail the campaign and upend two nations and begs the question: Can love save the world after all? Where do we find the courage, and the power, to be the people we are meant to be? And how can we learn to let our true colors shine through? Casey McQuiston's Red, White & Royal Blue proves: true love isn't always diplomatic. \"I took this with me wherever I went and stole every second I had to read! Absorbing, hilarious, tender, sexy—this book had everything I crave. I’m jealous of all the readers out there who still get to experience Red, White & Royal Blue for the first time!\" - Christina Lauren, New York Times bestselling author of The Unhoneymooners \"Red, White & Royal Blue is outrageously fun. It is romantic, sexy, witty, and thrilling. I loved every second.\" - Taylor Jenkins Reid, New York Times bestselling author of Daisy Jones & The Six",
+    image: "http://books.google.com/books/content?id=_jNwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=_jNwDwAAQBAJ&printsec=frontcover&dq=red+white&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Lord of the Flies",
-  authors: ["William Golding"],
-  description: "The tale of a party of shipwrecked schoolboys, marooned on a coral island, who at first enjoy the freedom of the situation but soon divide into fearsome gangs which turn the paradise island into a nightmare of panic and death.",
-    image: "http://books.google.com/books/content?id=r6eoCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=r6eoCwAAQBAJ&printsec=frontcover&dq=lord+of+the+flies&hl=&cd=1&source=gbs_api"
+    _id: "_2iHDwAAQBAJ",
+    authors: ["E. M. Forster"],
+    title: "The Life to Come",
+    description: "From the literary icon, author of Howard’s End and A Passage to India, comes a posthumous collection of short works, many never before published. Featuring fourteen short stories, The Life to Come spans six decades of E. M. Forster’s literary career, tracking every phase of his development. Never having sought publication for most of the stories—only two were published in his lifetime—Forster worried his career would suffer because of their overtly homosexual themes. Instead they were shown to an appreciative circle of friends and fellow writers, including Christopher Isherwood, Siegfried Sassoon, Lytton Strachey, and T. E. Lawrence. With stories that are lively and amusing (“What Does It Matter?”; “The Obelisk”), and others that are more somber and thought-provoking (“Dr Woolacott”; “Arthur Snatchfold”), The Life to Come sheds a light on Forster’s powerful but suppressed explorations beyond the strictures of conventional society. “Have we been as ready for Forster’s honesty as we thought we were? His greatness surely had root in his capacity to treat all human relationships seriously and truthfully. . . . Even the earliest and most ephemeral of them will be recognized as the frailer embodiments of the same passionate convictions that made for the moral iron of his novels.” —Eudora Welty, The New York Times Book Review",
+    image: "http://books.google.com/books/content?id=_2iHDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=_2iHDwAAQBAJ&printsec=frontcover&dq=life+to+come+e.m.+forster&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "The Catcher in the Rye",
-  authors: ["J.D. Salinger"],
-  description: "The Catcher in the Rye is a 1951 novel by J. D. Salinger. A controversial novel originally published for adults, it has since become popular with adolescent readers for its themes of teenage angst and alienation. It has been translated into almost all of the world's major languages. Around 1 million copies are sold each year with total sales of more than 65 million books. The novel's protagonist Holden Caulfield has become an icon for teenage rebellion. The novel also deals with complex issues of innocence, identity, belonging, loss, and connection.",
-    image: "http://books.google.com/books/content?id=Bb91ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    link: "http://books.google.com/books?id=Bb91ngEACAAJ&dq=catcher+in+the+rye&hl=&cd=2&source=gbs_api"
+    _id: "k2asDwAAQBAJ",
+    authors: ["Tom Fitzgerald", 
+        "Lorenzo Marquez"],
+    title: "Legendary Children",
+    description: "A definitive deep-dive into queer history and culture with hit reality show RuPaul's Drag Race as a touchstone, by the creators of the pop culture blog Tom and Lorenzo From the singular voices behind Tom and Lorenzo comes the ultimate guide to all-things RuPaul's Drag Race and its influence on modern LGBTQ culture. Legendary Children centers itself around the idea that not only is RuPaul's Drag Race the queerest show in the history of television, but that RuPaul and company devised a show that serves as an actual museum of queer cultural and social history, drawing on queer traditions and the work of legendary figures going back nearly a century. In doing so, Drag Race became not only a repository of queer history and culture, but also an examination and illustration of queer life in the modern age. It is a snapshot of how LGBTQ folks live, struggle, work, and reach out to one another--and how they always have--and every bit of it is tied directly to Drag Race. Each chapter is an examination of a specific aspect of the show--the Werk Room, the Library, the Pit Crew, the runway, the Untucked lounge, the Snatch Game--that ties to a specific aspect of queer cultural history and/or the work of certain legendary figures in queer cultural history.",
+    image: "http://books.google.com/books/content?id=k2asDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=k2asDwAAQBAJ&printsec=frontcover&dq=legendary+children&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "The Punch Escrow",
-  authors: ["Tal M. Klein"],
-  description: "It's the year 2147. Advancements in nanotechnology have enabled us to control aging. We’ve genetically engineered mosquitoes to feast on carbon fumes instead of blood, ending air pollution. And teleportation has become the ideal mode of transportation, offered exclusively by International Transport―the world’s most powerful corporation, in a world controlled by corporations. Joel Byram spends his days training artificial-intelligence engines to act more human and trying to salvage his deteriorating marriage. He’s pretty much an everyday twenty-second century guy with everyday problems―until he’s accidentally duplicated while teleporting. Now Joel must outsmart the shadowy organization that controls teleportation, outrun the religious sect out to destroy it, and find a way to get back to the woman he loves in a world that now has two of him.",
-    image: "http://books.google.com/books/content?id=yns3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=yns3DwAAQBAJ&printsec=frontcover&dq=The+Punch+Escrow&hl=&cd=1&source=gbs_api"
+    _id: "Lf99BAAAQBAJ",
+    authors: ["Hanya Yanagihara"],
+    title: "A Little Life",
+    description: "ONE OF THE BEST BOOKS OF THE YEAR The New York Times • The Washington Post • The Wall Street Journal • NPR • Vanity Fair • Vogue • Minneapolis Star Tribune • St. Louis Post-Dispatch • The Guardian • O, The Oprah Magazine • Slate • Newsday • Buzzfeed • The Economist • Newsweek • People • Kansas City Star • Shelf Awareness • Time Out New York • Huffington Post • Book Riot • Refinery29 • Bookpage • Publishers Weekly • Kirkus WINNER OF THE KIRKUS PRIZE A MAN BOOKER PRIZE FINALIST A NATIONAL BOOK AWARD FINALIST A Little Life follows four college classmates—broke, adrift, and buoyed only by their friendship and ambition—as they move to New York in search of fame and fortune. While their relationships, which are tinged by addiction, success, and pride, deepen over the decades, the men are held together by their devotion to the brilliant, enigmatic Jude, a man scarred by an unspeakable childhood trauma. A hymn to brotherly bonds and a masterful depiction of love in the twenty-first century, Hanya Yanagihara’s stunning novel is about the families we are born into, and those that we make for ourselves.",
+    image: "http://books.google.com/books/content?id=Lf99BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=Lf99BAAAQBAJ&printsec=frontcover&dq=a+little+life&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Harry Potter and the Sorcerer's Stone",
-  authors: ["J.K. Rowling"],
-  description: "Harry Potter has no idea how famous he is. That's because he's being raised by his miserable aunt and uncle who are terrified Harry will learn that he's really a wizard, just as his parents were. But everything changes when Harry is summoned to attend an infamous school for wizards, and he begins to discover some clues about his illustrious birthright. From the surprising way he is greeted by a lovable giant, to the unique curriculum and colorful faculty at his unusual school, Harry finds himself drawn deep inside a mystical world he never knew existed and closer to his own noble destiny.",
-    image: "http://books.google.com/books/content?id=dmouxgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    link: "http://books.google.com/books?id=dmouxgEACAAJ&dq=Harry+Potter+and+the+Sorcerer%27s+Stone&hl=&cd=1&source=gbs_api"
+    _id: "eq0n9Ck79ysC",
+    authors: ["Alison Bechdel"],
+    title: "Fun Home",
+    description: "A memoir done in the form of a graphic novel by a cult favorite comic artist offers a darkly funny family portrait that details her relationship with her father--a funeral home director, high school English teacher, and closeted homosexual.",
+    image: "http://books.google.com/books/content?id=eq0n9Ck79ysC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=eq0n9Ck79ysC&printsec=frontcover&dq=fun+home&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Coraline",
-  authors: ["Neil Gaiman"],
-  description: "When Coraline steps through a door to find another house strangely similar to her own (only better), things seem marvelous. But there's another mother there, and another father, and they want her to stay and be their little girl. They want to change her and never let her go. Coraline will have to fight with all her wit and courage if she is to save herself and return to her ordinary life.",
-    image: "http://books.google.com/books/content?id=C8NVhWNU_uIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=C8NVhWNU_uIC&printsec=frontcover&dq=Coraline&hl=&cd=1&source=gbs_api"
+    _id: "8X7WAAAAQBAJ",
+    authors: ["Christopher Isherwood"],
+    title: "A Single Man",
+    description: "Welcome to sunny suburban 1960s Southern California. George is a gay middle-aged English professor, adjusting to solitude after the tragic death of his young partner. He is determined to persist in the routines of his former life. A Single Man follows him over the course of an ordinary twenty-four hours. Behind his British reserve, tides of grief, rage, and loneliness surge—but what is revealed is a man who loves being alive despite all the everyday injustices. When Christopher Isherwood's A Single Man first appeared, it shocked many with its frank, sympathetic, and moving portrayal of a gay man in maturity. Isherwood's favorite of his own novels, it now stands as a classic lyric meditation on life as an outsider.",
+    image: "http://books.google.com/books/content?id=8X7WAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=8X7WAAAAQBAJ&printsec=frontcover&dq=a+single+man&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Code: The Hidden Language of Computer Hardware and Software",
-  authors: ["Charles Petzold"],
-  description: "What do flashlights, the British invasion, black cats, and seesaws have to do with computers? In CODE, they show us the ingenious ways we manipulate language and invent new means of communicating with each other. And through CODE, we see how this ingenuity and our very human compulsion to communicate have driven the technological innovations of the past two centuries. Using everyday objects and familiar language systems such as Braille and Morse code, author Charles Petzold weaves an illuminating narrative for anyone who’s ever wondered about the secret inner life of computers and other smart machines. It’s a cleverly illustrated and eminently comprehensible story—and along the way, you’ll discover you’ve gained a real context for understanding today’s world of PCs, digital media, and the Internet. No matter what your level of technical savvy, CODE will charm you—and perhaps even awaken the technophile within.",
-    image: "http://books.google.com/books/content?id=iptCAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=iptCAwAAQBAJ&printsec=frontcover&dq=Code:+The+Hidden+Language+of+Computer+Hardware+and+Software&hl=&cd=1&source=gbs_api"
+    _id: "D9yXDwAAQBAJ",
+    authors: ["R. Eric Thomas"],
+    title: "Here for It",
+    description: "NATIONAL BESTSELLER • #ReadWithJenna Book Club Pick as Featured on Today • From the creator of Elle’s “Eric Reads the News,” a heartfelt and hilarious memoir-in-essays about growing up seeing the world differently, finding unexpected hope, and experiencing every awkward, extraordinary stumble along the way. “Pop culture–obsessed, Sedaris-level laugh-out-loud funny . . . [R. Eric Thomas] is one of my favorite writers.”—Lin-Manuel Miranda, Entertainment Weekly R. Eric Thomas didn’t know he was different until the world told him so. Everywhere he went—whether it was his rich, mostly white, suburban high school, his conservative black church, or his Ivy League college in a big city—he found himself on the outside looking in. In essays by turns hysterical and heartfelt, Thomas reexamines what it means to be an “other” through the lens of his own life experience. He explores the two worlds of his childhood: the barren urban landscape where his parents’ house was an anomalous bright spot, and the Eden-like school they sent him to in white suburbia. He writes about struggling to reconcile his Christian identity with his sexuality, the exhaustion of code-switching in college, accidentally getting famous on the internet (for the wrong reason), and the surreal experience of covering the 2016 election for Elle online, and the seismic changes that came thereafter. Ultimately, Thomas seeks the answer to these ever more relevant questions: Is the future worth it? Why do we bother when everything seems to be getting worse? As the world continues to shift in unpredictable ways, Thomas finds the answers to these questions by reenvisioning what “normal” means and in the powerful alchemy that occurs when you at last place yourself at the center of your own story. Here for It will resonate deeply and joyfully with everyone who has ever felt pushed to the margins, struggled with self-acceptance, or wished to shine more brightly in a dark world. Stay here for it—the future may surprise you.",
+    image: "http://books.google.com/books/content?id=D9yXDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=D9yXDwAAQBAJ&printsec=frontcover&dq=here+for+it&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "The Everything Store: Jeff Bezos and the Age of Amazon",
-  authors: ["Brad Stone"],
-  description: "The definitive story of Amazon.com, one of the most successful companies in the world, and of its driven, brilliant founder, Jeff Bezos. Amazon.com started off delivering books through the mail. But its visionary founder, Jeff Bezos, wasn't content with being a bookseller. He wanted Amazon to become the everything store, offering limitless selection and seductive convenience at disruptively low prices. To do so, he developed a corporate culture of relentless ambition and secrecy that's never been cracked. Until now. Brad Stone enjoyed unprecedented access to current and former Amazon employees and Bezos family members, giving listeners the first in-depth, fly-on-the-wall account of life at Amazon. Compared to tech's other elite innovators - Jobs, Gates, Zuckerberg - Bezos is a private man. But he stands out for his restless pursuit of new markets, leading Amazon into risky new ventures like the Kindle and cloud computing, and transforming retail in the same way Henry Ford revolutionized manufacturing. The Everything Store will be the revealing, definitive biography of the company that placed one of the first and largest bets on the Internet and forever changed the way we shop and read.",
-    image: "http://books.google.com/books/content?id=t95iRvivDHIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=t95iRvivDHIC&printsec=frontcover&dq=The+Everything+Store:+Jeff+Bezos+and+the+Age+of+Amazon&hl=&cd=1&source=gbs_api"
+    _id: "opC3d3ltQ94C",
+    authors: ["Madeline Miller"],
+    title: "The Song of Achilles",
+    description: "“At once a scholar’s homage to The Iliad and startlingly original work of art by an incredibly talented new novelist….A book I could not put down.” —Ann Patchett “Mary Renault lives again!” declares Emma Donoghue, author of Room, referring to The Song of Achilles, Madeline Miller’s thrilling, profoundly moving, and utterly unique retelling of the legend of Achilles and the Trojan War. A tale of gods, kings, immortal fame, and the human heart, The Song of Achilles is a dazzling literary feat that brilliantly reimagines Homer’s enduring masterwork, The Iliad. An action-packed adventure, an epic love story, a marvelously conceived and executed page-turner, Miller’s monumental debut novel has already earned resounding acclaim from some of contemporary fiction’s brightest lights—and fans of Mary Renault, Bernard Cornwell, Steven Pressfield, and Colleen McCullough’s Masters of Rome series will delight in this unforgettable journey back to ancient Greece in the Age of Heroes.",
+    image: "http://books.google.com/books/content?id=opC3d3ltQ94C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=opC3d3ltQ94C&printsec=frontcover&dq=song+of+achilles&hl=&cd=2&source=gbs_api",
   },
 
   {
-    title: "Total Recall: My Unbelievably True Life Story",
-  authors: ["Arnold Schwarzenegger"],
-  description: "In his signature larger-than-life style, Arnold Schwarzenegger’s Total Recall is a revealing self-portrait of his illustrious, controversial, and truly unique life. The greatest immigrant success story of our time. His story is unique, and uniquely entertaining, and he tells it brilliantly in these pages. He was born in a year of famine, in a small Austrian town, the son of an austere police chief. He dreamed of moving to America to become a bodybuilding champion and a movie star. By the age of twenty-one, he was living in Los Angeles and had been crowned Mr. Universe. Within five years, he had learned English and become the greatest bodybuilder in the world. Within ten years, he had earned his college degree and was a millionaire from his business enterprises in real estate, landscaping, and bodybuilding. He was also the winner of a Golden Globe Award for his debut as a dramatic actor in Stay Hungry. Within twenty years, he was the world’s biggest movie star, the husband of Maria Shriver, and an emerging Republican leader who was part of the Kennedy family. Thirty-six years after coming to America, the man once known by fellow body­builders as the Austrian Oak was elected governor of California, the seventh largest economy in the world. He led the state through a budget crisis, natural disasters, and political turmoil, working across party lines for a better environment, election reforms, and bipartisan solutions. With Maria Shriver, he raised four fantastic children. In the wake of a scandal he brought upon himself, he tried to keep his family together. Until now, he has never told the full story of his life, in his own voice. Here is Arnold, with total recall.",
-    image: "http://books.google.com/books/content?id=8SvJAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=8SvJAQAAQBAJ&printsec=frontcover&dq=Total+Recall:+My+Unbelievably+True+Life+Story&hl=&cd=1&source=gbs_api"
+    _id: "zZrFR3M5XukC",
+    authors: ["James Baldwin"],
+    title: "Giovanni's Room",
+    description: "One of the BBC's '100 Novels That Shaped Our World' Baldwin's ground-breaking second novel, which established him as one of the great American writers of his time David, a young American in 1950s Paris, is waiting for his fiancée to return from vacation in Spain. But when he meets Giovanni, a handsome Italian barman, the two men are drawn into an intense affair. After three months David's fiancée returns and, denying his true nature, he rejects Giovanni for a 'safe' future as a married man. His decision eventually brings tragedy. Filled with passion, regret and longing, this story of a fated love triangle has become a landmark of gay writing. James Baldwin caused outrage as a black author writing about white homosexuals, yet for him the issues of race, sexuality and personal freedom were eternally intertwined. 'Exquisite... a feat of fire-breathing, imaginative daring' Guardian 'Excruciating beauty' San Francisco Chronicle 'Audacious... remarkable... elegant and courageous' Caryl Phillips",
+    image: "http://books.google.com/books/content?id=zZrFR3M5XukC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    link: "http://books.google.com/books?id=zZrFR3M5XukC&dq=giovanni%27s+room&hl=&cd=2&source=gbs_api",
   },
 
   {
-    title: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
-  authors: ["Ashlee Vance"],
-  description: "In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of one of Silicon Valley's most exciting, unpredictable, and ambitious entrepreneurs - a real-life Tony Stark - and a fascinating exploration of the renewal of American invention and its new makers. Elon Musk spotlights the technology and vision of Elon Musk, the renowned entrepreneur and innovator behind SpaceX, Tesla, and SolarCity, who sold one of his Internet companies, PayPal, for $1.5 billion. Ashlee Vance captures the full spectacle and arc of the genius' life and work, from his tumultuous upbringing in South Africa and flight to the United States to his dramatic technical innovations and entrepreneurial pursuits. Vance uses Musk's story to explore one of the pressing questions of our age: Can the nation of inventors and creators who led the modern world for a century still compete in an age of fierce global competition? He argues that Musk - one of the most unusual and striking figures in American business history - is a contemporary, visionary amalgam of legendary inventors and industrialists, including Thomas Edison, Henry Ford, Howard Hughes,and Steve Jobs. More than any other entrepreneur today, Musk has dedicated his energies and his own vast fortune to inventing a future that is as rich and far reaching as the visionaries of the golden age of science-fiction fantasy.",
-    image: "http://books.google.com/books/content?id=Ma4sjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    link: "http://books.google.com/books?id=Ma4sjwEACAAJ&dq=Elon+Musk:+Tesla,+SpaceX,+and+the+Quest+for+a+Fantastic+Future&hl=&cd=1&source=gbs_api"
+    _id: "CX6m7scQ4wcC",
+    authors: ["Alice Walker"],
+    title: "The Color Purple",
+    description: "The lives of two sisters--Nettie, a missionary in Africa, and Celie, a Southern woman married to a man she hates--are revealed in a series of letters exchanged over thirty years.",
+    image: "http://books.google.com/books/content?id=CX6m7scQ4wcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=CX6m7scQ4wcC&printsec=frontcover&dq=color+purple&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Steve Jobs",
-  authors: ["Walter Isaacson"],
-  description: "Based on more than 40 interviews with Jobs conducted over two years - as well as interviews with more than a hundred family members, friends, adversaries, competitors, and colleagues - Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. At a time when America is seeking ways to sustain its innovative edge, and when societies around the world are trying to build digital-age economies, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the 21st century was to connect creativity with technology. He built a company where leaps of the imagination were combined with remarkable feats of engineering. Although Jobs cooperated with this book, he asked for no control over what was written. He put nothing off-limits. He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes,and colleagues provide an unvarnished view of the passions, perfectionism, obsessions, artistry, devilry, and compulsion for control that shaped his approach to business and the innovative products that resulted. Driven by demons, Jobs could drive those around him to fury and despair. But his personality and products were interrelated, just as Apple's hardware and software tended to be, as if part of an integrated system. His tale is instructive and cautionary, filled with lessons about innovation, character, leadership, and values.",
-    image: "http://books.google.com/books/content?id=8U2oAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=8U2oAAAAQBAJ&printsec=frontcover&dq=Steve+Jobs&hl=&cd=1&source=gbs_api"
+    _id: "yPXY8iMIekkC",
+    authors: ["Armistead Maupin"],
+    title: "Tales of the City",
+    description: "The eccentric, mysterious, naive, jaded, up-and-coming, down-and-out, adventuresome, and withdrawn boarders in Russian Hill share their dissimilar worlds and worries",
+    image: "http://books.google.com/books/content?id=yPXY8iMIekkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=yPXY8iMIekkC&printsec=frontcover&dq=tales+of+the+city&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Astrophysics for People in a Hurry",
-  authors: ["Neil deGrasse Tyson"],
-  description: "What is the nature of space and time? How do we fit within the universe? How does the universe fit within us? There's no better guide through these mind-expanding questions than acclaimed astrophysicist and best-selling author Neil deGrasse Tyson. But today, few of us have time to contemplate the cosmos. So Tyson brings the universe down to Earth succinctly and clearly, with sparkling wit, in digestible chapters consumable anytime and anywhere in your busy day. While waiting for your morning coffee to brew, or while waiting for the bus, the train, or the plane to arrive, Astrophysics for People in a Hurry will reveal just what you need to be fluent and ready for the next cosmic headlines: from the big bang to black holes, from quarks to quantum mechanics, and from the search for planets to the search for life in the universe.",
-    image: "http://books.google.com/books/content?id=WkZmDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=WkZmDwAAQBAJ&printsec=frontcover&dq=Astrophysics+for+People+in+a+Hurry&hl=&cd=1&source=gbs_api"
+    _id: "_OnXAwAAQBAJ",
+    authors: ["Frank O'Hara"],
+    title: "Lunch Poems",
+    description: "50th anniversary hardcover gift edition of the groundbreaking poetry collection by the leader of the \"New York School\" of poetry.",
+    image: "http://books.google.com/books/content?id=_OnXAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=_OnXAwAAQBAJ&printsec=frontcover&dq=lunch+poems&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "1984",
-  authors: ["George Orwell"],
-  description: "Winston Smith toes the Party line, rewriting history to satisfy the demands of the Ministry of Truth. With each lie he writes, Winston grows to hate the Party that seeks power for its own sake and persecutes those who dare to commit thoughtcrimes. But as he starts to think for himself, Winston can’t escape the fact that Big Brother is always watching... A startling and haunting vision of the world, 1984 is so powerful that it is completely convincing from start to finish. No one can deny the influence of this novel, its hold on the imaginations of multiple generations of readers, or the resiliency of its admonitions—a legacy that seems only to grow with the passage of time.",
-    image: "http://books.google.com/books/content?id=kotPYEqx7kMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=kotPYEqx7kMC&printsec=frontcover&dq=1984&hl=&cd=1&source=gbs_api"
+    _id: "HdnWDgAAQBAJ",
+    authors: ["Joseph Cassara"],
+    title: "The House of Impossible Beauties",
+    description: "NAMED A MOST ANTICIPATED BOOK OF 2018 BY Buzzfeed • The Wall Street Journal • The Millions • Southern Living • Bustle • Esquire • Entertainment Weekly • Nylon “Cassaras’s propulsive and profound first novel, finding one’s home in the world—particularly in a subculture plagued by fear and intolerance from society—comes with tragedy as well as extraordinary personal freedom.” -- Esquire A gritty and gorgeous debut that follows a cast of gay and transgender club kids navigating the Harlem ball scene of the 1980s and ’90s, inspired by the real House of Xtravaganza made famous by the seminal documentary Paris Is Burning It’s 1980 in New York City, and nowhere is the city’s glamour and energy better reflected than in the burgeoning Harlem ball scene, where seventeen-year-old Angel first comes into her own. Burned by her traumatic past, Angel is new to the drag world, new to ball culture, and has a yearning inside of her to help create family for those without. When she falls in love with Hector, a beautiful young man who dreams of becoming a professional dancer, the two decide to form the House of Xtravaganza, the first-ever all-Latino house in the Harlem ball circuit. But when Hector dies of AIDS-related complications, Angel must bear the responsibility of tending to their house alone. As mother of the house, Angel recruits Venus, a whip-fast trans girl who dreams of finding a rich man to take care of her; Juanito, a quiet boy who loves fabrics and design; and Daniel, a butch queen who accidentally saves Venus’s life. The Xtravaganzas must learn to navigate sex work, addiction, and persistent abuse, leaning on each other as bulwarks against a world that resists them. All are ambitious, resilient, and determined to control their own fates, even as they hurtle toward devastating consequences. Told in a voice that brims with wit, rage, tenderness, and fierce yearning, The House of Impossible Beauties is a tragic story of love, family, and the dynamism of the human spirit.",
+    image: "http://books.google.com/books/content?id=HdnWDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=HdnWDgAAQBAJ&printsec=frontcover&dq=house+of+impossible+beautiies&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "Frankenstein",
-  authors: ["Mary Shelley"],
-  description: "Few creatures of horror have seized readers' imaginations and held them for so long as the anguished monster of Mary Shelley's Frankenstein. The story of Victor Frankenstein's terrible creation and the havoc it caused has enthralled generations of readers and inspired countless writers of horror and suspense. Considering the novel's enduring success, it is remarkable that it began merely as a whim of Lord Byron's. \"We will each write a story,\" Byron announced to his next-door neighbors, Mary Wollstonecraft Godwin and her lover Percy Bysshe Shelley. The friends were summering on the shores of Lake Geneva in Switzerland in 1816, Shelley still unknown as a poet and Byron writing the third canto of Childe Harold. When continued rains kept them confined indoors, all agreed to Byron's proposal. The illustrious poets failed to complete their ghost stories, but Mary Shelley rose supremely to the challenge. With Frankenstein, she succeeded admirably in the task she set for herself: to create a story that, in her own words, \"would speak to the mysterious fears of our nature and awaken thrilling horror -- one to make the reader dread to look round, to curdle the blood, and quicken the beatings of the heart.\"",
-    image: "http://books.google.com/books/content?id=2Zc3AAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=2Zc3AAAAYAAJ&pg=PP1&dq=Frankenstein&hl=&cd=1&source=gbs_api"
+    _id: "UbfNDwAAQBAJ",
+    authors: ["Bryan Washington"],
+    title: "Memorial",
+    description: "A NEW YORK TIMES NOTABLE BOOK OF THE YEAR A GOOD MORNING AMERICA BOOK CLUB PICK Named a Best Book of the Year by The Washington Post, TIME, O, the Oprah Magazine, Esquire, Harper's Bazaar, Good Housekeeping, and Real Simple “A masterpiece.” —NPR “No other novel this year captures so gracefully the full palette of America.” —The Washington Post “Wryly funny, gently devastating.” —Entertainment Weekly A funny and profound story about family in all its strange forms, joyful and hard-won vulnerability, becoming who you're supposed to be, and the limits of love. Benson and Mike are two young guys who live together in Houston. Mike is a Japanese American chef at a Mexican restaurant and Benson's a Black day care teacher, and they've been together for a few years—good years—but now they're not sure why they're still a couple. There's the sex, sure, and the meals Mike cooks for Benson, and, well, they love each other. But when Mike finds out his estranged father is dying in Osaka just as his acerbic Japanese mother, Mitsuko, arrives in Texas for a visit, Mike picks up and flies across the world to say goodbye. In Japan he undergoes an extraordinary transformation, discovering the truth about his family and his past. Back home, Mitsuko and Benson are stuck living together as unconventional roommates, an absurd domestic situation that ends up meaning more to each of them than they ever could have predicted. Without Mike's immediate pull, Benson begins to push outwards, realizing he might just know what he wants out of life and have the goods to get it. Both men will change in ways that will either make them stronger together, or fracture everything they've ever known. And just maybe they'll all be okay in the end.",
+    image: "http://books.google.com/books/content?id=UbfNDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=UbfNDwAAQBAJ&printsec=frontcover&dq=memorial+bryan&hl=&cd=1&source=gbs_api",
   },
 
   {
-    title: "The Great Gatsby",
-  authors: ["F. Scott Fitzgerald"],
-  description: "The authentic edition from Fitzgerald's original publisher. This edition approved by the Holden-Crowther Literary Organisation. The Great Gatsby, F. Scott Fitzgerald's third book, stands as the supreme achievement of his career. This exemplary novel of the Jazz Age has been acclaimed by generations of readers. The story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan, of lavish parties on Long Island at a time when The New York Times noted \"gin was the national drink and sex the national obsession,\" it is an exquisitely crafted tale of America in the 1920s. The Great Gatsby is one of the great classics of twentieth-century literature.",
-    image: "http://books.google.com/books/content?id=zWvuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-    link: "http://books.google.com/books?id=zWvuDwAAQBAJ&printsec=frontcover&dq=The+Great+Gatsby&hl=&cd=1&source=gbs_api"
-  },
-
-  {
-    title: "Born a Crime: Stories from a South African Childhood",
-  authors: ["Trevor Noah"],
-  description: "Trevor Noah, one of the comedy world's fastest-rising stars and host of The Daily Show, tells his wild coming-of-age story during the twilight of apartheid in South Africa and the tumultuous days of freedom that followed. In this Audible Studios production, Noah provides something deeper than traditional memoirists: powerfully funny observations about how farcical political and social systems play out in our lives. \"Nelson Mandela once said, 'If you talk to a man in a language he understands, that goes to his head. If you talk to him in his language, that goes to his heart.' He was so right. When you make the effort to speak someone elses language, even if it's just basic phrases here and there, you are saying to them, 'I understand that you have a culture and identity that exists beyond me. I see you as a human being.'\" (Trevor Noah)\nAttuned to the power of language at a young age - as a means of acceptance and influence in a country divided, then subdivided, into groups at odds with one another - Noah's raw, personal journey becomes something extraordinary in audio: a true testament to the power of storytelling. With brutal honesty and piercing wit, he forgoes an ordinary reading and, instead, delivers something more intimate, sharing his story with the openness and candor of a close friend. His chameleon-like ability to mimic accents and dialects, to shift effortlessly between languages including English, Xhosa, and Zulu, and to embody characters throughout his childhood - his mother, his gran, his schoolmates, first crushes and infatuations - brings each memory to life in vivid detail. Hearing him directly, you're reminded of the gift inherent in telling one's story and having it heard; of connecting with another, and seeing them as a human being.\nThe stories Noah tells are by turns hilarious, bizarre, tender, dark, and poignant - subsisting on caterpillars during months of extreme poverty, making comically pitiful attempts at teenage romance in a color-obsessed world, thrown into jail as the hapless fall guy for a crime he didn't commit, thrown by his mother from a speeding car driven by murderous gangsters, and more.",
-    image: "http://books.google.com/books/content?id=dAzJCwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-    link: "http://books.google.com/books?id=dAzJCwAAQBAJ&dq=Born+a+Crime:+Stories+from+a+South+African+Childhood&hl=&cd=1&source=gbs_api"
+    _id: "t7ifDwAAQBAJ",
+    authors: ["Carmen Maria Machado"],
+    title: "In the Dream House",
+    description: "A revolutionary memoir about domestic abuse by the award-winning author of Her Body and Other Parties In the Dream House is Carmen Maria Machado’s engrossing and wildly innovative account of a relationship gone bad, and a bold dissection of the mechanisms and cultural representations of psychological abuse. Tracing the full arc of a harrowing relationship with a charismatic but volatile woman, Machado struggles to make sense of how what happened to her shaped the person she was becoming. And it’s that struggle that gives the book its original structure: each chapter is driven by its own narrative trope—the haunted house, erotica, the bildungsroman—through which Machado holds the events up to the light and examines them from different angles. She looks back at her religious adolescence, unpacks the stereotype of lesbian relationships as safe and utopian, and widens the view with essayistic explorations of the history and reality of abuse in queer relationships. Machado’s dire narrative is leavened with her characteristic wit, playfulness, and openness to inquiry. She casts a critical eye over legal proceedings, fairy tales, Star Trek, and Disney villains, as well as iconic works of film and fiction. The result is a wrenching, riveting book that explodes our ideas about what a memoir can do and be.",
+    image: "http://books.google.com/books/content?id=t7ifDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    link: "http://books.google.com/books?id=t7ifDwAAQBAJ&printsec=frontcover&dq=in+the+dream+house&hl=&cd=1&source=gbs_api",
   }
+
 ];
 
 db.Book

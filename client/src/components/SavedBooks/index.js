@@ -39,7 +39,7 @@ class SavedBooks extends Component {
                 :
                 <Container>
                     {this.state.savedBooks.map(book => (
-                        <Card key={book._id}>
+                        <Card className="justify-content-sm-center m-3 p-3" key={book._id}>
                             <Row>
                                 <Col sm={2} className="text-center p-2">
                                     <Image

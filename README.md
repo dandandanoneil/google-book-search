@@ -12,6 +12,8 @@ Full stack app (MongoDB, Express, React.js, Node) that allows a user to search f
 
 ---
 ## Installation 
+You can view the [deployed application](#deployed-application) on Heroku, or...
+
 To run this app on your machine, use the <code>npm install</code> command in the terminal (optional: use <code>npm run seed</code> to seed the database with data for demonstration purposes), then <code>npm run start</code> to launch the back end server on localhost:3001 and the fron end application on localhost:3000. Then navigate to http://localhost:3000/ in your browser to view the application.
 
 ## Deployed Application
