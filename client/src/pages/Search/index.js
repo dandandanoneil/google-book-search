@@ -34,7 +34,7 @@ class Search extends Component {
 
   formatObject = function(book) {
     const newBook = {
-        _id: book._id,
+        _id: book.id,
         title: book.volumeInfo.title,
         authors: book.volumeInfo.authors,
         description: "",

@@ -4,31 +4,26 @@ const db = require("../models");
 module.exports = {
   findAll: function(req, res) {
     db.Book
-      .find({})
+      .find(req.query)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
     db.Book
-      .findById(req.params.id)
+      .findOne({id: req.params.id})
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
     db.Book
       .create({
-        title: req.params.title,
-        authors: req.params.authors,
-        description: req.params.description,
-        image: req.params.image,
-        link: req.params.link
+        _id: req.body.id,
+        title: req.body.title,
+        authors: req.body.authors,
+        description: req.body.description,
+        image: req.body.image,
+        link: req.body.link
       }).then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
-  },
-  update: function(req, res) {
-    db.Book
-      .findOneAndUpdate({ id: req.params.id }, req.body)
-      .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
