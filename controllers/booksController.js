@@ -15,8 +15,6 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    console.log("req.body.id:", req.body.id);
-
     db.Book
       .create({
         _id: req.body._id,
@@ -29,13 +27,10 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   remove: function(req, res) {
-    console.log("Deleting book with id", req.params.id);
     db.Book
     .findById(req.params.id)
     .then(dbModel => dbModel.remove())
     .then(dbModel => res.json(dbModel))
-    .catch(err => {
-        console.error(err);
-        res.status(422).json(err);
-    });  }
+    .catch(err => res.status(422).json(err));
+  }
 };

@@ -54,11 +54,9 @@ class Search extends Component {
   };
   
   searchBook = function(search) {
-    console.log("Making an API call to search for", search);
     this.setState({ results: [] })
     API.getBook(search)
     .then(books => {
-      console.log("API call returned", books);
       const newResults = books.data.items.map(book => this.formatObject(book));
       this.setState({ results: newResults })
     }).catch(err => console.error(err));

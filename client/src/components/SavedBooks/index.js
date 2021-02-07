@@ -22,7 +22,6 @@ class SavedBooks extends Component {
     handleUnsave = (event) => {
         API.deleteBook(event.target.id)
             .then(res => {
-                console.log("Deleted book:", res);
                 this.updateSavedBooks();
             })
             .catch(err => console.error(err));
@@ -30,8 +29,6 @@ class SavedBooks extends Component {
 
     render() {
         const foundBooks = (this.state.savedBooks.length > 0);
-        console.log("foundBooks?", foundBooks);
-        console.log("savedBooks:", this.state.savedBooks);
 
         return (
             <>
